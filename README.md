@@ -11,7 +11,7 @@ compare code against from /proc/kcore.
 
 # Example
 <pre>
-ryan@elfmaster:~/kdress$ sudo ./kdress vmlinuz-`uname -r` vmlinux /boot/System.map-`uname -r`
+ryan@elfmaster:~/kdress$ make && sudo bash ./kdress.sh /boot/vmlinuz-`uname -r` vmlinux /boot/System.map-`uname -r`
 
 [+] vmlinux has been successfully extracted
 [+] vmlinux has been successfully instrumented with a complete ELF symbol table.
